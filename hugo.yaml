@@ -1,0 +1,115 @@
+baseURL: https://fjhuang2004-hue.github.io/
+languageCode: zh-cn
+title: 合成生物学 · 干实验方法
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# 语法高亮
+markup:
+  highlight:
+    style: dracula
+    noClasses: false
+
+# 分页
+pagination:
+  pagerSize: 10
+
+# 菜单
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 40
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# PaperMod 主题参数
+params:
+  env: production
+  description: "合成生物学干实验计算方法 — 蛋白设计、酶筛选与改造、从头设计教程"
+  author: 黄福京
+  
+  # 首页显示模式：显示文章列表
+  homeInfoParams:
+    Title: "合成生物学 · 干实验方法"
+    Content: >
+      收录合成生物学领域的干实验计算方法教程。
+      
+      当前聚焦 **蛋白设计**（酶筛选、酶改造、从头设计），后续将拓展更多方向。
+      
+      面向零基础学习者，从环境配置到实战案例，一步一步带你入门。
+
+  # 日期格式
+  dateFormat: "2006-01-02"
+
+  # 社交图标
+  socialIcons:
+    - name: github
+      url: "https://github.com/fjhuang2004-hue"
+    - name: email
+      url: "mailto:fjhuang2004@gmail.com"
+
+  # 显示阅读时间
+  ShowReadingTime: true
+  # 显示文章字数
+  ShowWordCount: true
+  # 显示面包屑导航
+  ShowBreadCrumbs: true
+  # 显示代码复制按钮
+  ShowCodeCopyButtons: true
+  # 显示分享按钮
+  ShowShareButtons: false
+  # 显示上一篇/下一篇
+  ShowPostNavLinks: true
+  # 显示目录
+  ShowToc: true
+  # 目录默认展开层级
+  TocOpen: true
+
+  # 搜索（使用 Fuse.js）
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+  # 编辑链接
+  editPost:
+    URL: "https://github.com/fjhuang2004-hue/fjhuang2004-hue.github.io/tree/main/content"
+    Text: "在 GitHub 上编辑"
+    appendFilePath: true
+
+# 分类法
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
